@@ -63,8 +63,14 @@ a:hover {
   transform: translateY(-10px);
 }
 
+.profile-card{
+  background-color: #4491d4;
+  border: 3px solid #A9D3E7;
+  border-radius: 12px;
+}
+
 #profile-pic {
-  width: 20%;
+  width: 15%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 50%;
@@ -72,23 +78,46 @@ a:hover {
   padding: 5px;
 }
 
-.list-inline {
+.social-links {
   list-style: none;
   padding-left: 0;
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 15px;
 }
 
-.list-inline > li {
+.social-links li {
   display: inline-block;
 }
 
-.button {
+.social-links img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.github-button {
   background-color: white;
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
   margin-top: 10px;
+}
+
+.github-button a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.github-icon {
+  width: 20px;
+  height: auto;
 }
